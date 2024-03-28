@@ -1,0 +1,140 @@
+.hidden {
+    display: none !important;
+  }
+
+.meal-planner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 97%;
+    font-family: "Alata", sans-serif;
+}
+
+
+.recipes-container {
+    font-size: 1.6vh;
+    font-weight: 500;
+    background-color: white;
+    top: 50%;
+    height: 100%;
+    min-width: 250px;
+    padding: 0vh 3vh 0vh 3vh;
+    overflow-y: scroll;
+}
+
+.recipes-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.recipe-viewing-container {
+    font-size: 1.6vh;
+    font-weight: 500;
+    background-color: white;
+    padding: 2vh;
+    top: 50%;
+    height: 95%;
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+}
+
+
+.recipe-list-show-hide {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+.saved-uploaded-selection{
+    height: 40px;
+    width: 75%;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin-left: 28.75px;
+    cursor: pointer;
+}
+
+
+.swap-recipe-view{
+    float: right;
+    border: none;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: solid;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+
+.menu-buttons{
+    background-color: rgb(21, 101, 53);
+    color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+
+.icon-size{
+    font-size: 25px;
+}
+
+
+.add-recipe-button{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 1.6vh;
+    font-weight: 500;
+}
+
+
+.collapsed-container{
+    margin-top: 50px;
+    align-self: flex-start;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+
+.collapsed-button-display{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.no-active-recipe{
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.no-recipes-in-container{
+    border-style: none;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Toastify__toast {
+    font-size: 18px; /* Adjust the font size */
+}

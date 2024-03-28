@@ -1,0 +1,55 @@
+.meal-planner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    padding-right: 5%;
+}
+
+#plannerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F2F5EB;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 50px;
+    height: 75vh;
+    width: 30vw;
+    overflow-y: auto;
+}
+
+#mealPlans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 50px;
+    height: 75vh;
+    width: 30vw;
+    overflow-y: auto;
+}
+
+#no-meals-planned {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    color: #888888;
+}
+
+.button {
+    background-color: #53634E;
+    border: none;
+    height: 40px;
+    width: 25vw;
+    margin: 10px;
+}
+
+#meals-planned {
+    overflow-y: auto;
+    margin: 10px;
+}

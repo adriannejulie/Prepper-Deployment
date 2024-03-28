@@ -1,0 +1,48 @@
+.ingredient-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+}
+
+
+.amount-box{
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.ingredient-box{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5%;
+}
+
+
+.dash-box{
+    width: 5%;
+    text-align: center;
+    line-height: 25px;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+
+
+.alata-font{
+    font-family: "Alata", sans-serif;
+}
+
+svg.trash{
+    font-size: 13px;
+    border-radius: 0px;
+}
