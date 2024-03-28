@@ -1,3 +1,6 @@
 [submodule "back_end"]
 	path = back_end
 	url = https://github.com/adriannejulie/Prepper-Back-End.git
+[submodule "front_end"]
+	path = front_end
+	url = https://github.com/adriannejulie/Prepper-Food-Planner.git
