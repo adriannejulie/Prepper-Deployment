@@ -1,0 +1,13 @@
+steps:
+  # Frontend Build
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+    dir: 'front_end/REACT-APP' # Path to frontend directory
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+    dir: 'front_end/REACT-APP' # Path to frontend directory
+
+  # Backend Build
+  - name: 'gcr.io/cloud-builders/mvn'
+    args: ['install']
+    dir: 'back-end' # Path to backend directory
