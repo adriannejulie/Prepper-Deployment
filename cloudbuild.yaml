@@ -7,7 +7,17 @@ steps:
     args: ['run', 'build']
     dir: 'front_end/REACT-APP' # Path to frontend directory
 
+  # Frontend Deployment
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', '--image', 'gcr.io/YOUR_PROJECT_ID/frontend-image', '--platform', 'managed', '--region', 'us-central1', '--allow-unauthenticated']
+    dir: 'front_end/REACT-APP' # Path to frontend directory
+
   # Backend Build
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['install']
+    dir: 'back-end' # Path to backend directory
+
+  # Backend Deployment
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', '--image', 'gcr.io/YOUR_PROJECT_ID/backend-image', '--platform', 'managed', '--region', 'us-central1', '--allow-unauthenticated']
     dir: 'back-end' # Path to backend directory
